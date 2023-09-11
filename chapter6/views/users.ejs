@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <% for (let user of users) { %>
+      <li><%= user %></li>
+      <hr />
+      <% }%>
+    </ul>
+  </body>
+</html>
